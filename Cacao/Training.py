@@ -2,9 +2,6 @@ import cv2
 import torch
 import random
 
-# Replace this with your phone's IP address from the IP Webcam app
-PHONE_CAM_URL = 'http://192.168.100.60:8080/video'  # Update with your actual IP
-
 # Load YOLOv5 model
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5/runs/train/cacao_varieties8/weights/best.pt', force_reload=True)
 
@@ -17,15 +14,15 @@ names = model.names  # {class_id: class_name}
 for cls_id, cls_name in names.items():
     colors[cls_name] = [random.randint(0, 255) for _ in range(3)]
 
-# Connect to phone camera stream
-cap = cv2.VideoCapture(PHONE_CAM_URL)
+# Connect to default webcam (usually index 0)
+cap = cv2.VideoCapture(1)
 
-print("Starting cacao variety detection from phone camera. Press 'q' to quit.\n")
+print("Starting cacao variety detection from webcam. Press 'q' to quit.\n")
 
 while True:
     ret, frame = cap.read()
     if not ret:
-        print("Failed to grab frame from phone camera.")
+        print("Failed to grab frame from webcam.")
         break
 
     # Run detection
@@ -65,7 +62,7 @@ while True:
         print(f"  - {label} (Confidence: {confidence:.2f})")
 
     # Show video with annotations
-    cv2.imshow("Cacao Variety Detection - Phone Cam", frame)
+    cv2.imshow("Cacao Variety Detection - Webcam", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
