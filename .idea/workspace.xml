@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7a38dbc-8d8a-4ae4-b2c6-213c12a40231" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Cacao/captured_images/dataset/download_dataset.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Cacao/yolov5/app_dash.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Cacao/yolov5/model_loader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/color.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cacao/Training.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cacao/Training.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cacao/captured_images/color_range.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cacao/yolov5" beforeDir="false" afterPath="$PROJECT_DIR$/Cacao/yolov5" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +87,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/color.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CacaoClassifier$base_conv.coverage" NAME="base_conv Coverage Results" MODIFIED="1743474798394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/keras/src/layers/convolutional" />
